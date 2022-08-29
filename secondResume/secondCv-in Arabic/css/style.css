@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Noto Kufi Arabic', sans-serif;
+    overflow-x: hidden;
+    background: #eee;
+    color: #0e1415;
+    font-size: 12px;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact; 
+    background-color: #13242eed;
+}
+html {
+    height: 100%;
+}
+.container {
+    /* max-width: 800px; */
+    background-color: #13242e;
+    color:  #ffffff;
+    margin: 0px auto 0px;
+    box-shadow: 1px 1px 2px #DAD7D7;
+    border-radius: 3px;
+    padding: 15px;
+    margin-top: 50px;
+}
+    
+:root {
+    --bg-color:  #1d2225;
+    --head-color: #162844;
+}
+ul li {
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;    
+}
+a{
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+.fullSection {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+.leftSection,.rightSection {
+    text-align: center;
+}
+.fullSection h2 {
+    border-top: 1px dashed #4d6379;
+    border-bottom: 1px dashed #4d6379;
+    line-height: unset;
+    padding-top: 4px;
+    font-weight: unset;
+    text-transform: uppercase;
+}
+.info {
+    text-align: right;
+    padding-top: 25px;
+}
+.info h3{
+    color: #2d3f7d;
+    font-size: 22px;
+    font-weight: bold;
+}
+.info h4 {
+}
+.info span {
+    color: #5e6e73;
+    font-family: "Roboto";
+    display: block;
+    margin-top: -6px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.info p {
+    font-family: "Roboto";
+    font-size: 16px;
+}
+ .software ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: self-end;
+    margin-bottom: 8px;
+}
+ .software ul li span {
+    font-family: "Roboto";
+    font-size: 16px;
+}
+.software ul .rating img {
+    width: 22px;
+    padding-right: 6px;
+}
+.centersection {
+    width: fit-content;
+    position: relative;
+    margin-top: 55px;   
+    background-image: url('../img/Rectangle\ 1.png'); 
+    background-position: top;
+    background-size: cover;
+}
+.centersection .profile .pic {
+    position: absolute;
+    top: -65px;
+}
+.centersection .profile img {
+    width: 200px;
+}
+.centersection .profile, .centersection .desc, .centersection .contactInfo .part{
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.centersection .data{
+    padding-top: 185px;
+}
+
+.centersection .data h1 {
+    font-weight: 700;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.centersection .data span {
+    font-style: italic;
+    font-family: "Roboto";
+    font-size: 13px;
+}
+.centersection .data p {
+    font-family: "Roboto";
+    text-align: center;
+    border-bottom: 1px dashed #4d6379;
+    padding-bottom: 45px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    width: 245px;
+    line-height: 22px;
+}
+.centersection .contactInfo .part {
+    margin-bottom: 14px;
+}
+.centersection .contactInfo h5 {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+.centersection .contactInfo span {
+    font-family: sans-serif;
+    color: #6166ffc7;
+}
+.centersection .contactInfo .website {
+    border-bottom: 1px dashed #4d6379;
+    padding-bottom: 45px;
+}
+.centersection .socialMedia img {
+    width: 70px;
+}
+.centersection .socialMedia span {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 14px;
+}
+.rightSection .data {
+    text-align: left;
+}
+
+    
+/* rwd */
+@media (max-width: 768px) { 
+    .software ul .rating img {
+        width: 19px;
+    }
+    .software ul li {
+        flex-flow: column;
+    }
+    .skills ul li {
+        flex-flow: column-reverse;
+    }
+}
+
+@media print {
+
+   
+ 
+}

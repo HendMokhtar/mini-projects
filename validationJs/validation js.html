@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form validation</title>
+	<link rel="stylesheet" type="text/css" href="validation js.css">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+
+	<div class="content">
+    <div class="form-box">
+      <div class="form">
+        <form action="#" method="post" id="formId">
+
+
+          <label for="username">UserName</label><br>
+          <input type="text" name="username" id="username" placeholder="Your UserName">
+          <span id="error"></span><br><br>
+
+          <label for="email">Email</label><br>
+          <input type="text" name="email" id="email" placeholder="Your email address">
+          <span id="error1"></span><br><br>
+
+          <label for="pw">Choose a password</label><br>
+          <input type="password" name="password" id="pw" placeholder="Must have atleast 10 characters" >
+          <span id="error2"></span><br><br>
+          
+
+          <label for="repw">Password Confirmation</label>
+          <input type="password" name="repassword" id="repw" placeholder="Must match the choosen password" >
+          <span id="error3"></span><br><br>
+
+          <label for="phone">Phone Number</label><br>
+          <select id="phone" name="isd">
+               <option value="+2" selected>EG</option>           
+               <option value="+01">US</option>
+               <option value="+33">FR</option>
+               <option value="+44">UK</option>
+               <option value="+49">DE</option>
+               <option value="+61">AU</option>
+               <option value="+86">CN</option>
+               <option value="+91">IN</option>
+          </select>
+          <input type="tel" name="phone" id="phone" placeholder="Your phone number">
+          <span id="error4"></span><br><br>
+
+          <label for="country">Where are you from?</label>
+          <select id="Country" required>
+                            <option value="EG" selected>Egypt</option>
+                            <option value="US">United States</option>
+                            <option value="FR">France</option>
+                            <option value="UK">United Kingdom</option>
+                            <option value="DE">Germany</option>
+                            <option value="AU">Australia</option>
+                            <option value="CN">China</option>
+                            <option value="IN">India</option>
+           </select><br><br>
+
+            <label class="check" for="dec">I hereby Agree with the <a href="#">Terms and Coditions</a> and <a href="#">Privacy Policy</a>.
+                            <input class="checkbox" type="checkbox" name="agreement" id="dec" checked>
+                            <span class="tick"></span>
+            </label><br><br>
+
+            <div class="social">
+            <p>Or,<br>Sign up with<br><i class="fab fa-google-plus-g"></i> <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i></p>
+             </div>
+
+           <input class="proceed" type="submit" name="submit" value="Proceed">                 
+       
+
+        </form>
+      </div>
+
+
+    </div>
+  </div>
+
+<!-- <script type="text/javascript" src="validation js.js"></script>
+ -->
+ <script type="text/javascript">
+ 	$(function(){
+
+ 	$("#formId").submit(function(event){
+ 		event.preventDefault(); 
+ 	    var username= $('#username').val();
+ 	    var email= $('#email').val();
+ 	    var password= $('#pw').val();
+ 	    var repassword= $('#repw').val();
+ 	    var phonenum= $('#phone').val();
+ 	    var nameReg = /^[A-Za-z]+$/;
+ 	    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+ 	    var numberReg =  /^[0-9]+$/;
+
+ 	    if (username=="") {
+ 	    $('#error').text("*Please Enter Your Username!");}
+
+        else if(!nameReg.test(username)){
+        $('#error').text("*Only characters allowed!");}
+
+        else $('#error').hide();
+
+        if (email=="") {
+        $('#error1').text("*Please Enter Your Email!"); } 
+
+        else if(!emailReg.test(email)){
+        $('#error1').text("*Please Enter a valid email address!");}
+        else $('#error1').hide();
+
+        if (password=="") {
+        $('#error2').text("*Please Enter Your Password!");}
+        else $('#error2').hide(); 
+
+        if (repassword=="") {
+        $('#error3').text("*Please Enter Your password Confirmation!"); }
+
+        else if(repassword != password){
+        $('#error3').text("*password Miss Match!"); }
+        else $('#error3').hide();
+
+        if (phonenum=="") {
+
+        $('#error4').text("*Please Enter Your Phone Number!"); }
+
+        else if(!numberReg.test(phonenum)){
+        $('#error4').text("*Only Numbers allowed!");}
+
+
+ 		});
+
+
+
+ 	});
+ 	
+ </script>
+
+
+</body>
+</html>

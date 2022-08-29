@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;    
+    overflow-x: hidden;
+    background: #eee;
+    color: #0e1415;
+    font-size: 12px;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact; 
+    background-color: #3c3c3ce8;
+}
+html {
+    height: 100%;
+}
+.container {
+    border-radius: 10px;
+    color:  #ffffff;
+    margin: 0px auto 0px;
+    padding: 0px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11),     0 2px 2px rgba(0,0,0,0.11),                     0 4px 4px rgba(0,0,0,0.11),                     0 8px 8px rgba(0,0,0,0.11),                     0 16px 16px rgba(0,0,0,0.11),                     0 32px 32px rgba(0,0,0,0.11);
+    max-width: 920px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+    
+:root {
+    --gray-color:  #3c3c3c;
+    --blue-color: #405765;
+}
+ul li {
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;    
+}
+a{
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+.fullSection {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.topSection .info {
+    background-color: var(--gray-color);
+    padding-top: 135px;
+    margin-bottom: 50px;
+    height: 440px;
+    margin-right: 40px;
+}
+.topSection .info::after{   
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    border-top: 46px solid #3c3c3c;
+    border-left: 130px solid transparent;
+    border-right: 150px solid transparent;
+    bottom: -46px;
+}
+.topSection .info::before {
+    content: "";
+    width: 100px;
+    height: 80px;
+    background: var(--blue-color);
+    position: absolute;
+    top: 0;
+    left: 90px;
+}
+.topSection .info .contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.topSection .info .contact ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.topSection .info .contact ul li a{
+    color: #fff;
+    letter-spacing: 2px;
+    font-family: Georgia;
+}
+.topSection .info .contact .symbol{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ .nameAndjob {
+    width: 330px;
+    height: 125px;
+    background: var(--blue-color);
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    margin: 15px 0px;
+    margin-left: -45px;
+    border-radius: 12px;
+    position: relative;
+    left: 18px;
+}
+ .nameAndjob::before {
+    content: "";
+    width: 95%;
+    height: 90%;
+    position: absolute;
+    border: 1px dashed;
+    top: 6px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+ .nameAndjob h1 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-top: 17px;
+    margin-bottom: 0;
+    text-decoration: double;
+    position: relative;
+}
+ .nameAndjob h1 span {
+    position: relative;
+}
+ .nameAndjob h1 span::before, .nameAndjob h1 span::after{
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 10px;
+    bottom: -4.5px;
+}
+ .nameAndjob h1 span::after {
+    bottom: -2px;
+}
+ .nameAndjob .stars img:last-child {
+    width: 40px;
+    display: block;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+.nameAndjob p {
+    font-family: 'Lobster Two', cursive;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin-top: -5px;
+}
+.topSection .logo {
+    width: 150px;
+    height: 150px;
+    background: #ffffff;
+    border-radius: 1000%;
+    position: absolute;
+    left: 65px;
+    top: 55px;
+    -webkit-border-radius: 1000%;
+    -moz-border-radius: 1000%;
+    -ms-border-radius: 1000%;
+    -o-border-radius: 1000%;
+}
+.topSection .centerSide {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+.objective{
+    box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+    0 2px 2px rgba(0,0,0,0.11), 
+                    0 4px 4px rgba(0,0,0,0.11), 
+                    0 8px 8px rgba(0,0,0,0.11), 
+                    0 16px 16px rgba(0,0,0,0.11), 
+                    0 32px 32px rgba(0,0,0,0.11);
+    color: #3c3c3c;
+    margin: 25px;
+    text-align: center;
+
+}
+ .objective h2,.experience h6{
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    font-size: 23px;
+    bottom: 10px;
+    color: #3c3c3c;
+}
+ .objective h2::after, .objective h2::before{
+    content: "";
+    width: 90px;
+    height: 1px;
+    background-color: rgb(0 0 0 / 13%);
+    position: absolute;
+    left: 0px;
+    top: 13px;
+}
+ .objective h2::after {
+    left: 225px;
+
+}
+.topSection .centerSide .objective p{
+    width: 315px;
+    padding: 5px 35px;
+    padding-bottom: 35px;
+    color: #000000f7;
+}
+.centerSide .hobbies {
+    color: #000000;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: relative;
+}
+.centerSide .hobbies::after{
+    content: "";
+    height: 70%;
+    width: 1px;
+    background-color: #40576559;
+    position: absolute;
+    top: 60px;
+}
+.centerSide .hobbies h2,.rightSide h2 {
+    color: #3c3c3c;
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+    font-size: 23px;
+    bottom: 10px;
+    color: #3c3c3c;
+}
+.centerSide .hobbies li {
+    display: flex;
+    gap: 130px;
+    align-items: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+.centerSide .hobbies li::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #40576559;
+    position: absolute;
+    top: 65px;
+}
+.centerSide .hobbies li:first-child {
+    gap: 80px;
+    margin-bottom: unset;
+}
+.centerSide .hobbies li:first-child::after,.centerSide .hobbies li:last-child::after {
+    content: unset;
+}
+.centerSide .hobbies li i {
+    color: var(--blue-color);
+    font-size: 20px;
+}
+.centerSide .hobbies li .ratio {
+    font-family: 'Lobster Two', cursive;
+}
+.centerSide .hobbies li .ratio p {
+    font-size: 25px;
+    text-align: center;
+}
+.centerSide .hobbies li .ratio span {
+    font-family: initial;
+    font-size: 13px;
+    color: var(--blue-color);
+}
+.centerSide .hobbies li .ratio i {
+    font-size: 15px;
+    padding-left: 5px;
+}
+.rightSide {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: end;
+    margin-top: 40px;
+}
+.rightSide h2 {
+    padding-right: 45px;
+    margin-bottom: 0;
+}
+.rightSide ul li {
+    position: relative;
+    width: 175px;
+    background-color: var(--blue-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    padding: 10px;
+    margin-left: 55px;
+}
+.rightSide ul li::before {
+    content: "";
+    position: absolute;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 20px solid #fff;
+    left: 0px;
+}
+.rightSide ul li .social {
+    width: 35px;
+    height: 35px;
+    background-color: #00000094;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.rightSide ul li .social i {
+    font-size: 14px;
+}
+.rightSide ul li .social span {
+    font-size: 15px;
+}
+.centerSection {
+    background-color: var(--blue-color);
+}
+
+.centerSection .objective.skills {
+    padding: 0 38px;
+}
+.centerSection::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border: 1px dashed;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.centerSection h2 {
+    color: #fff;
+}
+.centerSection .markP .p1,.centerSection .markP .p2 {
+    color: #fff;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Georgia";
+}
+.centerSection .markP .p2 {
+    color: #979798;
+}
+.centerSection .mark {
+    position: relative;
+    font-family: 'Lobster Two', cursive;
+    width: 75px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 16px;
+    padding-left: 15px; 
+}
+.centerSection .mark::after{
+    content: "";
+    position: absolute;
+    border-top: 19px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #405765;
+    right: 0;
+}
+.centerSection .objective {
+    box-shadow: 0 19px 38px rgb(141 138 138 / 30%), 0 15px 12px rgb(0 0 0 / 22%);
+    border: 1px solid #ffffff8f;
+    border-top: transparent;
+    height: 380px;
+}
+.centerSection .objective h2::after,.centerSection .objective h2::before {
+    content: "";
+    width: 125px;
+    height: 1px;
+    background-color: #ffffff8f;
+    position: absolute;
+    left: -1px;
+    top: 10px;
+}
+.centerSection .objective h2::after {
+    left: unset;
+    right: 0;
+}
+.centerSection .skills h2::after,.centerSection .skills h2::before {
+    left: -37px;
+}
+.centerSection .skills h2::after {
+    left: unset;
+    right: -38px;
+}
+.centerSection .educationUl li{
+    gap: 30px;
+    padding-right: 25px;
+}
+.centerSection .skillsUl {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-end;
+}
+.centerSection .skillsUl .firstRow,.skillsUl .secondRow {
+    display: flex;
+    gap: 40px;
+}
+.centerSection .skillsUl .firstRow {
+    margin-bottom: 30px;
+}
+.centerSection .skillsUl .logo img {
+    width: 90px;
+}
+.centerSection .skillsUl .logo h3{
+    color: #ededed;  
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-family: -webkit-body;
+} 
+
+.centerSection .skillsUl .logoSpan span{
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+}
+.centerSection .progress {
+    margin-left: -12px;
+    margin-right: -5px;
+    margin-top: 3px;
+}
+.centerSection .progress-bar {
+    background-color: #3b3b3b6b!important;
+}
+.experience {
+    border-bottom: 2px solid var(--blue-color);
+    color: #3c3c3c;
+    box-shadow: 0 19px 38px rgb(0 0 0 / 8%), 0 15px 12px rgb(0 0 0 / 8%);
+}
+.experience h6::before,.experience h6::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 43%;
+    height: 2px;
+    background-color: var(--blue-color);
+
+}
+.experience h6::before {
+    left: unset;
+    right: 0;
+}
+.bottomSection .experLine {
+    width: 100%;
+    height: 2px;
+    background-color: #3c3c3c;
+    position: relative;
+    margin-top: 150px;
+    margin-bottom: 170px;
+}
+.bottomSection .circle {
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border: 3px solid var(--blue-color);
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.bottomSection .firstExper {
+    position: absolute;
+    left: 110px;
+    top: -6px;
+}
+.bottomSection .experLine .year {
+    font-family: 'Lobster Two', cursive;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    margin-left: -27px;
+    margin-top: 7px;
+}
+.bottomSection .nameAndjob {
+    color: #fff;
+    width: 295px;
+    height: unset;
+    margin: unset;
+    font-family: "Georgia";
+    position: absolute;
+    top: -200px;
+    left: -60px;
+}
+.bottomSection .nameAndjob::before {
+    content: unset;
+}
+.bottomSection .nameAndjob p {
+    font-family: "Georgia";
+    letter-spacing: 1px;
+    font-size: 11px;
+    margin: -2px 40px;
+    margin-bottom: 12px;
+    position: relative;
+}
+.bottomSection .nameAndjob p::after {
+    content: "";
+    position: absolute;
+    border-top: 10px solid #405765;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #405765;
+    border-right: 10px solid transparent;
+    bottom: -32px;
+    left: 30px;
+}
+.bottomSection .nameAndjob h1{
+    text-transform: unset;
+    letter-spacing: unset;
+    padding-top: 17px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    position: relative;
+    font-weight: 400;
+    font-size: 23px;
+}
+.bottomSection .nameAndjob h1 span::after {
+    content: unset;
+}
+.bottomSection .nameAndjob h1 span::before {
+    width: 60px;
+    height: 1px;
+    position: absolute;
+    left: 7px;
+    bottom: -13px;
+}
+.bottomSection .nameAndjob h1 span:last-child::before {
+    left: 17px;
+}
+.bottomSection .secondExper {
+    left: 430px;
+}
+.bottomSection .secondExper .year {
+    margin-top: -65px;
+}
+.bottomSection .secondExper .nameAndjob {
+    top: unset;
+    bottom: -215px;
+    left: -135px;
+}
+.bottomSection .secondExper .nameAndjob p::after {
+    content: unset;
+}
+.bottomSection .secondExper .nameAndjob h1::after {
+    content: "";
+    position: absolute;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #405765;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #405765;
+    bottom: 54px;
+    left: 67px;
+}
+
+
+
+.bottomSection .thirdExper {  
+    left: unset;
+    right: 115px;
+}
+.bottomSection .thirdExper .nameAndjob {
+    left: -190px;
+}
+.bottomSection .thirdExper .nameAndjob p::after {
+    border-top: 10px solid #405765;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid #405765;
+    left: 130px;
+}
+
+/* rwd */
+@media (max-width: 768px) { 
+    .container {
+        display: flex;
+    }
+    .fullSection {
+        background-color: #fff;
+    }
+
+}
+
+@media print {
+ 
+}

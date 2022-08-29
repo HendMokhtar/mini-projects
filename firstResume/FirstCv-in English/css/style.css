@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;    
+    overflow-x: hidden;
+    background: #eee;
+    /* min-height: 100%; */
+    color: #0e1415;
+    font-size: 12px;
+    -webkit-print-color-adjust: exact; 
+}
+html {
+    height: 100%;
+}
+.container {
+    max-width: 700px;
+    background: #fff;
+    margin: 0px auto 0px;
+    box-shadow: 1px 1px 2px #DAD7D7;
+    border-radius: 3px;
+    padding: 15px;
+    margin-top: 50px;
+}
+    
+:root {
+    --black-color: #0e1415;
+    --white-color: #ffffff;
+    --blue-color: #00adf7;  
+    --bg-color: #d9d9d9;
+}
+ul li {
+    list-style: none;
+}
+a:hover{
+    text-decoration: none;    
+}
+a{
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -ms-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+.fullResume {
+   height: -webkit-fill-available;
+    
+}
+.container .leftSide {
+    max-width: 260px;
+    background-color: #9e9e9e9c;   
+}
+.leftSide .contact .item,.leftSide .personal,.leftSide .skills {
+    padding: 10px;
+}
+.leftSide .contact .item a{
+    color: #ffff;
+    padding-left: 5px;
+}
+.leftSide .contact .phone {
+    background-color: #005cb0;
+    -webkit-print-color-adjust: exact; 
+}
+.leftSide .contact .web {
+   background-color: #007aeb;
+   -webkit-print-color-adjust: exact; 
+}
+.leftSide .contact .mail{
+    background-color: #00adf7;
+    -webkit-print-color-adjust: exact; 
+}
+.leftSide .contact .logoDiv {
+    width: 22px;
+    height: 22px;
+    border: 1px solid #ffffff;
+    color: #ffff;
+    font-size: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.leftSide h2 {
+    font-size: 18px;
+    color: #0e1415;
+    font-weight: bolder;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.leftSide .personal,.leftSide .skills,.leftSide .referance {
+    padding: 0px 10px;
+}
+
+.leftSide .personal ul li {
+    color: #0e1415;
+    font-family: "Open Sans";
+    padding-bottom: 3px;
+}   
+.leftSide .personal ul li span:first-child{
+    color: #87969b;
+    padding-left: 30px;
+}
+.leftSide .skills ul li {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    padding-bottom: 3px;
+    font-family: "Open Sans";
+}
+.leftSide .progress {
+    height: 8px;
+    width: 110px;
+}
+.leftSide .referance h3 {
+    font-size: unset;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 27px;
+}
+.leftSide .referance p{
+    margin-bottom: 13px;
+}
+
+.rightSide .myProfile{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.rightSide .myProfile h1 {
+    letter-spacing: 8px;
+    color: #007aeb;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    font-size: 30px;
+}
+.rightSide .myProfile .p1 {
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-family: "Open Sans";
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.rightSide h3 {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    background-color: #9e9e9e9c;
+    text-transform: uppercase;
+    font-size: 21px;
+    padding: 5px 20px;
+    -webkit-print-color-adjust: exact; 
+}
+.rightSide .experience .details{    
+    padding: 5px 20px;
+}
+.rightSide .experience .parent h4 {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+}
+.rightSide .experience .parent {
+    display: flex;
+    gap: 45px;
+}
+.rightSide .experience .child:first-child {
+    white-space: nowrap;
+}
+.rightSide .experience .parent span{
+    letter-spacing: 2px;
+    font-family: "Open Sans";
+}
+.rightSide .experience .child p:first-child {
+    color: #0e1415;
+    margin-bottom: 8px;
+}
+.rightSide .experience .child p:last-child {
+    color: #0e1415;
+    font-family: "Open Sans";
+}
+.rightSide .hobbies ul {
+    display: flex;
+    padding: 5px 20px;
+    gap: 31px;
+}
+.rightSide .hobbies ul li{
+    text-align: center;
+}
+.rightSide .hobbies i {
+    color: #007aeb;
+    margin-bottom: 8px;
+}
+.rightSide .hobbies ul li p {
+    color: #0e1415;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+    
+/* rwd */
+@media (max-width: 768px) { 
+    .container {
+        background-color: unset;
+        padding-left: 0;
+        box-shadow: unset;
+        margin-top: unset;
+    }
+}
+
+@media print {
+    .leftSide {
+        font-size: 13px;
+    }
+   
+    .rightSide {
+        font-size: 17px;
+    }
+   
+ 
+}

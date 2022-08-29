@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Translation site</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	
+	<style type="text/css">
+	hr{
+    margin-top: -5px;
+    border: solid;
+    border-color: #afb1b9;
+	}
+	textarea{
+	border: transparent;
+	}
+	.float-right{
+    margin-right: 95px;
+    margin-top: 50px;
+	}
+	.count{
+    margin-top: 95px;
+    margin-left: -19px;
+	}
+	.price{
+    margin-left: 30px;
+	}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+	<form class="float-right" method="post" name="myform">
+		<textarea rows="15" cols="45" name="txtarea" placeholder="Enter some text to be translated"></textarea>
+
+		<hr>
+		<input type="button" class="btn btn-info text-center  btn-lg btn-block" value="Translate My Text" onClick="countWords()">
+		<br>	
+	</form>
+
+	<form name="mysecondform">
+		<label class="text-info count" id="count">Words Count:</label>
+		<input type="text" name="noofwords" size="10" id="count">
+        
+		<label class="text-info price" id="price">Total Price in piasters:</label>
+		<input type="text" name="price" size="10" id="price">
+	</form>
+    </div>
+<script type="text/javascript" src="Translationsite.js"></script> 
+
+</body>
+</html>

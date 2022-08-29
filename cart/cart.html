@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cart</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="cart.css">
+</head>
+<body>
+	 <div class="float-left">
+    <div id="item1">
+        <h1 id="h1">Item 1</h1>
+        <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        <span id="salary1">50 EGP</span>
+        <button class="btn" id="btn1" onclick="addItem('h1','salary1',50)">Add To Cart</button>
+    </div><!-- end of item1 -->
+
+    <div id="item2">
+        <h2 id="h2">Item 2</h2>
+        <p id="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        <span id="salary2">40 EGP</span>
+        <button class="btn" id="btn2" onclick="addItem('h2','salary2',40)">Add To Cart</button>
+    </div><!-- end of item2 -->
+
+       <div id="item3">
+        <h3 id="h3">Item 3</h3>
+        <p id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        <span id="salary3">30 EGP</span>
+        <button class="btn" id="btn3" onclick="addItem('h3','salary3',30)">Add To Cart</button>
+    </div><!-- end of item3 -->
+
+    </div>
+    <div class="clear"></div>
+
+    <div class="float-left" id="cart">
+        <h5 id="h5">Cart</h5>
+        <p id="deleteme"></p>
+       <div id="selected-items"></div>
+        <p id="demo"></p>
+
+    </div>
+<script type="text/javascript" src="cart.js">
+
+	
+</script>
+</body>
+</html>
